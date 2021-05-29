@@ -28,6 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
     self.vc1a = [[VC1 alloc]init];
     self.vc2a = [[VC2 alloc]init];
     self.vc3a = [[VC3 alloc]init];
