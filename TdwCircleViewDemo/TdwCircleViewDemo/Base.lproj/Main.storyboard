@@ -24,28 +24,17 @@
                                     <constraint firstAttribute="height" constant="300" id="DT4-TF-Kd3"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5pq-3a-3xM" customClass="TdwCircleView" customModule="TdwCircleViewDemo" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="444" width="414" height="200"/>
-                                <color key="backgroundColor" systemColor="systemTealColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="9wQ-kg-6RF"/>
-                                </constraints>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="5pq-3a-3xM" firstAttribute="top" secondItem="X4B-7E-OYQ" secondAttribute="bottom" constant="50" id="2b4-nH-8vM"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X4B-7E-OYQ" secondAttribute="trailing" constant="40" id="BCQ-3w-xZr"/>
-                            <constraint firstItem="5pq-3a-3xM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HWG-nf-BKP"/>
                             <constraint firstItem="X4B-7E-OYQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="IVX-Tj-hwE"/>
                             <constraint firstItem="X4B-7E-OYQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="LhL-30-DpE"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5pq-3a-3xM" secondAttribute="trailing" id="b57-9I-pRs"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="tdwCircleV" destination="X4B-7E-OYQ" id="3wJ-Qk-46R"/>
-                        <outlet property="tdwCircleV2" destination="5pq-3a-3xM" id="92c-vh-wLl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -56,9 +45,6 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemTealColor">
-            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

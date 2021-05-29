@@ -9,7 +9,8 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var tdwCircleV: TdwCircleView!
-    @IBOutlet weak var tdwCircleV2: TdwCircleView!
+    var tdwCircleV2 = TdwCircleView()
+    
     let vc1 = VC1()
     let vc2 = VC2()
     let vc3 = VC3()
@@ -72,6 +73,7 @@ class ViewController: UIViewController {
         
         //添加3个纯代码的 UIView,
         //add 3 view only by coding without Contrllor or xib
+        view.addSubview(tdwCircleV2)
         tdwCircleV2.views = [v1,v2,v3]
         tdwCircleV2.isVertical = true
         tdwCircleV2.autoScroll = true
@@ -79,9 +81,12 @@ class ViewController: UIViewController {
         tdwCircleV2.didSelect { index in
             print("垂直视图选中了\(index)列")
         }
-
+        
     }
     
-    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        tdwCircleV2.frame = CGRect(x: 20, y: 400, width: view.bounds.width - 40, height: 300)
+    }
 }
 
