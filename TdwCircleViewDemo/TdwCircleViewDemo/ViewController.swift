@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import TdwCircleView
 class ViewController: UIViewController {
     @IBOutlet weak var tdwCircleV: TdwCircleView!
     let tdwCircleV2 = TdwCircleView()
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         tdwCircleV.isVertical = false //是否是垂直滚动 is vertical scrolling
         tdwCircleV.autoScroll = true    //是否自动滚动 is can scroll
         tdwCircleV.pageControl.isHidden = false //是否显示页面 , page is hidden
-        tdwCircleV.timeInterval = 2 //时间间隔 time interval
+        tdwCircleV.timeInterval = 4 //时间间隔 time interval
         tdwCircleV.didSelect { index in  //点击回调  , click block
             print("水平视图选中了\(index)行")
         }
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
         tdwCircleV2.views = [v1,v2,v3]
         tdwCircleV2.isVertical = true
         tdwCircleV2.autoScroll = true
-        tdwCircleV2.timeInterval = 1.5
+        tdwCircleV2.timeInterval = 0.5
         tdwCircleV2.didSelect { index in
             print("垂直视图选中了\(index)列")
         }
@@ -87,6 +87,10 @@ class ViewController: UIViewController {
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         tdwCircleV2.frame = CGRect(x: 20, y: 400, width: view.bounds.width - 40, height: 300)
+    }
+    @IBAction func btnPushVcOcClick(_ sender: Any) {
+        let vc = VcOC()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
 

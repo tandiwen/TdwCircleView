@@ -1,0 +1,11 @@
+framework module TdwCircleView {
+  umbrella header "TdwCircleView.h"
+
+  export *
+  module * { export * }
+}
+
+module TdwCircleView.Swift {
+    header "TdwCircleView-Swift.h"
+    requires objc
+}

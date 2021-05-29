@@ -7,17 +7,17 @@
 
 import UIKit
 
-class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewDelegate{
-    typealias Block = (Int)->()
-    var block:Block?
+public class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewDelegate{
+    public typealias Block = (Int)->()
+    @objc public var block:Block?
     let ID = "TdwCircleViewCell"
     var timer = Timer()
     var mainView:UICollectionView!
-    var pageControl = UIPageControl()
+    @objc public var pageControl = UIPageControl()
     var currentPage = 0//当前显示的页数
-    var infiniteLoop = true //是否无线循环
-    var timeInterval:TimeInterval = 1 //时间间隔,几秒滚动一次
-    var autoScroll = false
+    @objc public var infiniteLoop = true //是否无线循环
+    @objc public var timeInterval:TimeInterval = 1 //时间间隔,几秒滚动一次
+    @objc public  var autoScroll = false
     {
         didSet{
             
@@ -25,38 +25,39 @@ class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewDelegate
         }
         
     } //是否自动滚动
-    var flowLayout = UICollectionViewFlowLayout()
-    let muti:CGFloat = 100
-    
-    var views = [UIView](){//子视图数组
+    @objc public  var views = [UIView](){//子视图数组
         didSet{
-            
-            
             totalItemsCount = CGFloat(infiniteLoop ? views.count * Int(muti) : views.count)
         }
     }
-    var titles = [String]()//下面的标题
+
+    
+    
+    @objc public var titles = [String]()//下面的标题
+    
+    @objc public   var isVertical = false  //是否是垂直滚动
+    
+    var flowLayout = UICollectionViewFlowLayout()
+    let muti:CGFloat = 100
     var totalItemsCount:CGFloat = 0 //全体轮播图数量
-    var isVertical = false  //是否是垂直滚动
-    
-    
     required init?(coder: NSCoder) {
         super.init(coder: coder)
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
-    func didSelect(block:@escaping Block){
+    @objc public func didSelect(block:@escaping Block){
         self.block = block
     }
+
     func pageControlIndexWithCurrentCellIndex(_ index: Int) -> Int {
         return index % views.count
     }
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         Int(totalItemsCount)
     }
     
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ID, for: indexPath) as! TdwCircleViewCell
         let itemIndex = indexPath.row % views.count
         if titles.count >= itemIndex && titles.count > 0{
@@ -66,13 +67,13 @@ class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewDelegate
         
         return cell
     }
-    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+    public func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if block != nil{
             block!(indexPath.row % views.count)
         }
     }
     
-    func setAutoScroll(_ autoScroll:Bool){
+     func setAutoScroll(_ autoScroll:Bool){
         
         if autoScroll {
             //启动timer
@@ -83,7 +84,7 @@ class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewDelegate
         
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         setUI()
     }
@@ -207,7 +208,7 @@ class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewDelegate
     }
     
     //MARK: - UIScrollViewDelegate
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         //MARK: - 设置移动时候的页码
         if views.count < 2 {
@@ -235,12 +236,12 @@ class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewDelegate
         
     }
     
-    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+    public func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         if autoScroll{
             timer.invalidate()
         }
     }
-    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+    public func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
         setAutoScroll(autoScroll)
     }
     
@@ -248,13 +249,13 @@ class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewDelegate
 
 extension TdwCircleView:UICollectionViewDelegateFlowLayout{
     //cell尺寸,如果图片自己有尺寸就不显示这个尺寸
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         //这个大小不准,只有在xib的cell里设置固定的宽高才有用
         return CGSize(width: bounds.width , height: bounds.height )
     }
     
     //设置内边距,一般设置0,这样cell 的size方便计算
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+    public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
