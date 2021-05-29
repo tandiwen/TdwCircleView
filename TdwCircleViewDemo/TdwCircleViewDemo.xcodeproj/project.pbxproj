@@ -64,6 +64,7 @@
 		2B0C1006265756360025E7A8 = {
 			isa = PBXGroup;
 			children = (
+				2B420A51266226DD002AF552 /* TdwCircleView */,
 				2B0C1011265756360025E7A8 /* TdwCircleViewDemo */,
 				2B0C1010265756360025E7A8 /* Products */,
 				E736E27BCEFED32804E4348B /* Pods */,
@@ -93,8 +94,6 @@
 				2B7773792660E55B001F1DF9 /* VC1.xib */,
 				2B6CB5CF2661C70500117F81 /* VC2.swift */,
 				2B6CB5D02661C70500117F81 /* VC2.xib */,
-				2B0C102A265757C10025E7A8 /* TdwCircleView.swift */,
-				2BC3A4C2265CF35F0035EE29 /* TdwCircleViewCell.swift */,
 				2B0C1018265756360025E7A8 /* Main.storyboard */,
 				2B5371182657A94600886945 /* UIView+Extention.swift */,
 				2B0C101B265756370025E7A8 /* Assets.xcassets */,
@@ -102,6 +101,15 @@
 				2B0C1020265756370025E7A8 /* Info.plist */,
 			);
 			path = TdwCircleViewDemo;
+			sourceTree = "<group>";
+		};
+		2B420A51266226DD002AF552 /* TdwCircleView */ = {
+			isa = PBXGroup;
+			children = (
+				2B0C102A265757C10025E7A8 /* TdwCircleView.swift */,
+				2BC3A4C2265CF35F0035EE29 /* TdwCircleViewCell.swift */,
+			);
+			path = TdwCircleView;
 			sourceTree = "<group>";
 		};
 		9F43AC47A9D004F1D4FECC95 /* Frameworks */ = {
