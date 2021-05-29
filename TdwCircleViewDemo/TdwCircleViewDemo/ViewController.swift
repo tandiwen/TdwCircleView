@@ -9,7 +9,7 @@ import UIKit
 
 class ViewController: UIViewController {
     @IBOutlet weak var tdwCircleV: TdwCircleView!
-    var tdwCircleV2 = TdwCircleView()
+    let tdwCircleV2 = TdwCircleView()
     
     let vc1 = VC1()
     let vc2 = VC2()
