@@ -12,14 +12,14 @@
 		2B0C101A265756360025E7A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0C1018265756360025E7A8 /* Main.storyboard */; };
 		2B0C101C265756370025E7A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B0C101B265756370025E7A8 /* Assets.xcassets */; };
 		2B0C101F265756370025E7A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B0C101D265756370025E7A8 /* LaunchScreen.storyboard */; };
-		2B0C1027265756BE0025E7A8 /* TDWXIBSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B0C1026265756BE0025E7A8 /* TDWXIBSet.swift */; };
 		2B0C1029265757270025E7A8 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 2B0C1028265757270025E7A8 /* Podfile */; };
 		2B420A4D26620557002AF552 /* VC3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B420A4B26620557002AF552 /* VC3.swift */; };
 		2B420A4E26620557002AF552 /* VC3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B420A4C26620557002AF552 /* VC3.xib */; };
 		2B420A5026620FFA002AF552 /* UIView+addGes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B420A4F26620FFA002AF552 /* UIView+addGes.swift */; };
 		2B420A822662386B002AF552 /* VcOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B420A802662386B002AF552 /* VcOC.m */; };
 		2B420A832662386B002AF552 /* VcOC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B420A812662386B002AF552 /* VcOC.xib */; };
-		2B420A99266254E7002AF552 /* TdwCircleView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B420A98266254E7002AF552 /* TdwCircleView.framework */; };
+		2B420AA626626552002AF552 /* TdwCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B420AA426626552002AF552 /* TdwCircleView.swift */; };
+		2B420AA726626552002AF552 /* TdwCircleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B420AA526626552002AF552 /* TdwCircleViewCell.swift */; };
 		2B5371192657A94600886945 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5371182657A94600886945 /* UIView+Extention.swift */; };
 		2B6CB5D12661C70500117F81 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6CB5CF2661C70500117F81 /* VC2.swift */; };
 		2B6CB5D22661C70500117F81 /* VC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6CB5D02661C70500117F81 /* VC2.xib */; };
@@ -35,7 +35,6 @@
 		2B0C101B265756370025E7A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B0C101E265756370025E7A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2B0C1020265756370025E7A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B0C1026265756BE0025E7A8 /* TDWXIBSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDWXIBSet.swift; sourceTree = "<group>"; };
 		2B0C1028265757270025E7A8 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		2B420A4B26620557002AF552 /* VC3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC3.swift; sourceTree = "<group>"; };
 		2B420A4C26620557002AF552 /* VC3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VC3.xib; sourceTree = "<group>"; };
@@ -44,9 +43,8 @@
 		2B420A7F2662386B002AF552 /* VcOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VcOC.h; sourceTree = "<group>"; };
 		2B420A802662386B002AF552 /* VcOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VcOC.m; sourceTree = "<group>"; };
 		2B420A812662386B002AF552 /* VcOC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcOC.xib; sourceTree = "<group>"; };
-		2B420A98266254E7002AF552 /* TdwCircleView.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TdwCircleView.framework; sourceTree = "<group>"; };
-		2B420A9A26625569002AF552 /* TdwCircleView-Swift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "TdwCircleView-Swift.h"; path = "TdwCircleView.framework/Headers/TdwCircleView-Swift.h"; sourceTree = "<group>"; };
-		2B420A9B26625569002AF552 /* TdwCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TdwCircleView.h; path = TdwCircleView.framework/Headers/TdwCircleView.h; sourceTree = "<group>"; };
+		2B420AA426626552002AF552 /* TdwCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TdwCircleView.swift; sourceTree = "<group>"; };
+		2B420AA526626552002AF552 /* TdwCircleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TdwCircleViewCell.swift; sourceTree = "<group>"; };
 		2B5371182657A94600886945 /* UIView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
 		2B6CB5CF2661C70500117F81 /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
 		2B6CB5D02661C70500117F81 /* VC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VC2.xib; sourceTree = "<group>"; };
@@ -61,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B420A99266254E7002AF552 /* TdwCircleView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,9 +68,8 @@
 		2B0C1006265756360025E7A8 = {
 			isa = PBXGroup;
 			children = (
-				2B420A9A26625569002AF552 /* TdwCircleView-Swift.h */,
-				2B420A9B26625569002AF552 /* TdwCircleView.h */,
-				2B420A98266254E7002AF552 /* TdwCircleView.framework */,
+				2B420AA426626552002AF552 /* TdwCircleView.swift */,
+				2B420AA526626552002AF552 /* TdwCircleViewCell.swift */,
 				2B0C1011265756360025E7A8 /* TdwCircleViewDemo */,
 				2B0C1010265756360025E7A8 /* Products */,
 				E736E27BCEFED32804E4348B /* Pods */,
@@ -94,7 +90,6 @@
 			children = (
 				2B0C1028265757270025E7A8 /* Podfile */,
 				2B0C1012265756360025E7A8 /* AppDelegate.swift */,
-				2B0C1026265756BE0025E7A8 /* TDWXIBSet.swift */,
 				2B0C1016265756360025E7A8 /* ViewController.swift */,
 				2B420A4B26620557002AF552 /* VC3.swift */,
 				2B420A4C26620557002AF552 /* VC3.xib */,
@@ -255,11 +250,12 @@
 				2B420A5026620FFA002AF552 /* UIView+addGes.swift in Sources */,
 				2B420A4D26620557002AF552 /* VC3.swift in Sources */,
 				2B420A822662386B002AF552 /* VcOC.m in Sources */,
-				2B0C1027265756BE0025E7A8 /* TDWXIBSet.swift in Sources */,
 				2B77737A2660E55B001F1DF9 /* VC1.swift in Sources */,
 				2B0C1017265756360025E7A8 /* ViewController.swift in Sources */,
 				2B5371192657A94600886945 /* UIView+Extention.swift in Sources */,
 				2B0C1013265756360025E7A8 /* AppDelegate.swift in Sources */,
+				2B420AA626626552002AF552 /* TdwCircleView.swift in Sources */,
+				2B420AA726626552002AF552 /* TdwCircleViewCell.swift in Sources */,
 				2B6CB5D12661C70500117F81 /* VC2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

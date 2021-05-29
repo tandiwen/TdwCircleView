@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import TdwCircleView
+
 class ViewController: UIViewController {
     @IBOutlet weak var tdwCircleV: TdwCircleView!
     let tdwCircleV2 = TdwCircleView()
@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     let vc1 = VC1()
     let vc2 = VC2()
     let vc3 = VC3()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,6 +22,7 @@ class ViewController: UIViewController {
         //添加3个纯代码的简单视图
         //add 3 view by coding
         //MARK: - v1
+        
         let v1 = UIView()
         v1.backgroundColor = UIColor.red
         let label1 = UILabel()
@@ -57,11 +59,15 @@ class ViewController: UIViewController {
         
         //添加3个控制器的视图,为了让控制器不释放,把控制器设置成了成员变量 ,至少添加3个控制器或者视图,2个的话,UICollectView重用的时候加载view会提前消失
         //add 3 view of UIViewControllor,In order not to release UIViewContrllor,We set the Contrllor to member variable.
+       
+        
+        
+        
         tdwCircleV.views = [vc1.view,vc2.view,vc3.view] //视图数组 Views array
         tdwCircleV.isVertical = false //是否是垂直滚动 is vertical scrolling
         tdwCircleV.autoScroll = true    //是否自动滚动 is can scroll
         tdwCircleV.pageControl.isHidden = false //是否显示页面 , page is hidden
-        tdwCircleV.timeInterval = 4 //时间间隔 time interval
+        tdwCircleV.timeInterval = 2 //时间间隔 time interval
         tdwCircleV.didSelect { index in  //点击回调  , click block
             print("水平视图选中了\(index)行")
         }

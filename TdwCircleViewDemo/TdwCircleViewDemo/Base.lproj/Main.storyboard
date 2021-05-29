@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X4B-7E-OYQ" customClass="TdwCircleView" customModule="TdwCircleViewDemo" customModuleProvider="target">
-                                <rect key="frame" x="40" y="138" width="334" height="300"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <rect key="frame" x="40" y="138" width="334" height="200"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="DT4-TF-Kd3"/>
+                                    <constraint firstAttribute="height" constant="200" id="DT4-TF-Kd3"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H03-8A-mOq">
@@ -46,7 +46,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="KAc-u2-6j4"/>
                     <connections>
-                        <outlet property="tdwCircleV" destination="X4B-7E-OYQ" id="3wJ-Qk-46R"/>
+                        <outlet property="tdwCircleV" destination="X4B-7E-OYQ" id="gLG-vW-bSw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -75,6 +75,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemYellowColor">
             <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

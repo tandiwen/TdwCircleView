@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VC1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqe-2Z-0PI">
-                    <rect key="frame" x="20" y="64" width="374" height="21"/>
+                    <rect key="frame" x="20" y="44" width="374" height="21"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="EjI-r2-JyH"/>
@@ -31,7 +31,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0d-Yi-Cuy">
-                    <rect key="frame" x="100" y="85" width="214" height="21"/>
+                    <rect key="frame" x="100" y="65" width="214" height="21"/>
                     <color key="backgroundColor" systemColor="systemIndigoColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="21" id="rQt-Y1-RFH"/>
@@ -43,11 +43,11 @@
                         <action selector="btn1Click:" destination="-1" eventType="touchUpInside" id="UAh-F2-u7k"/>
                     </connections>
                 </button>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="pYA-MT-Pa5">
-                    <rect key="frame" x="107" y="126" width="200" height="200"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="pYA-MT-Pa5">
+                    <rect key="frame" x="132" y="96" width="150" height="150"/>
                     <constraints>
-                        <constraint firstAttribute="width" constant="200" id="9JP-fT-0mk"/>
-                        <constraint firstAttribute="height" constant="200" id="Ce2-4Q-TfC"/>
+                        <constraint firstAttribute="width" constant="150" id="9JP-fT-0mk"/>
+                        <constraint firstAttribute="height" constant="150" id="Ce2-4Q-TfC"/>
                     </constraints>
                 </imageView>
             </subviews>
@@ -60,8 +60,8 @@
                 <constraint firstItem="pYA-MT-Pa5" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="GGY-TJ-w0S"/>
                 <constraint firstItem="j0d-Yi-Cuy" firstAttribute="top" secondItem="Gqe-2Z-0PI" secondAttribute="bottom" id="Luk-ax-ivP"/>
                 <constraint firstItem="Gqe-2Z-0PI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="SBB-5x-Ept"/>
-                <constraint firstItem="Gqe-2Z-0PI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="cCX-2R-Lff"/>
-                <constraint firstItem="pYA-MT-Pa5" firstAttribute="top" secondItem="j0d-Yi-Cuy" secondAttribute="bottom" constant="20" id="gGJ-Ln-yJJ"/>
+                <constraint firstItem="Gqe-2Z-0PI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="cCX-2R-Lff"/>
+                <constraint firstItem="pYA-MT-Pa5" firstAttribute="top" secondItem="j0d-Yi-Cuy" secondAttribute="bottom" constant="10" id="gGJ-Ln-yJJ"/>
             </constraints>
             <point key="canvasLocation" x="139" y="100"/>
         </view>

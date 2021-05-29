@@ -30,7 +30,7 @@ public class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewD
             totalItemsCount = CGFloat(infiniteLoop ? views.count * Int(muti) : views.count)
         }
     }
-
+    
     
     
     @objc public var titles = [String]()//下面的标题
@@ -49,7 +49,7 @@ public class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewD
     @objc public func didSelect(block:@escaping Block){
         self.block = block
     }
-
+    
     func pageControlIndexWithCurrentCellIndex(_ index: Int) -> Int {
         return index % views.count
     }
@@ -73,7 +73,7 @@ public class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewD
         }
     }
     
-     func setAutoScroll(_ autoScroll:Bool){
+    func setAutoScroll(_ autoScroll:Bool){
         
         if autoScroll {
             //启动timer
@@ -95,17 +95,10 @@ public class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewD
         //  Converted to Swift 5.4 by Swiftify v5.4.24180 - https://swiftify.com/
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.minimumLineSpacing = 0
-        let Direction = isVertical
-        
         flowLayout.scrollDirection = isVertical ? .vertical : .horizontal
-        
-        //        flowLayout.scrollDirection = .vertical
         self.flowLayout = flowLayout
         let mainView = UICollectionView(frame: bounds, collectionViewLayout: flowLayout)
         addSubview(mainView)
-//        mainView.snp.makeConstraints { (make) in
-//            make.left.right.top.bottom.equalToSuperview()
-//        }
         mainView.frame = self.bounds
         mainView.backgroundColor = UIColor.clear
         mainView.isPagingEnabled = true
@@ -150,8 +143,8 @@ public class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewD
         
         
         
-        pageControl.frame = CGRect(x: bounds.width * 0.5 - pageControl.bounds.width * 0.5, y: bounds.height - 20 , width: bounds.width, height: 20)
         
+        pageControl.frame = CGRect(x: 0, y: bounds.height - 20 , width: bounds.width, height: 20)
         
     }
     //MARK: - 计算当前页
@@ -173,8 +166,6 @@ public class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewD
         }else{
             return 0
         }
-        
-        return 0
     }
     @objc func runTimer(){
         
@@ -250,7 +241,6 @@ public class TdwCircleView: UIView,UICollectionViewDataSource, UICollectionViewD
 extension TdwCircleView:UICollectionViewDelegateFlowLayout{
     //cell尺寸,如果图片自己有尺寸就不显示这个尺寸
     public func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        //这个大小不准,只有在xib的cell里设置固定的宽高才有用
         return CGSize(width: bounds.width , height: bounds.height )
     }
     
