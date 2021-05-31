@@ -18,13 +18,13 @@
 		2B420A5026620FFA002AF552 /* UIView+addGes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B420A4F26620FFA002AF552 /* UIView+addGes.swift */; };
 		2B420A822662386B002AF552 /* VcOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B420A802662386B002AF552 /* VcOC.m */; };
 		2B420A832662386B002AF552 /* VcOC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B420A812662386B002AF552 /* VcOC.xib */; };
-		2B420AA626626552002AF552 /* TdwCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B420AA426626552002AF552 /* TdwCircleView.swift */; };
-		2B420AA726626552002AF552 /* TdwCircleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B420AA526626552002AF552 /* TdwCircleViewCell.swift */; };
 		2B5371192657A94600886945 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5371182657A94600886945 /* UIView+Extention.swift */; };
 		2B6CB5D12661C70500117F81 /* VC2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B6CB5CF2661C70500117F81 /* VC2.swift */; };
 		2B6CB5D22661C70500117F81 /* VC2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B6CB5D02661C70500117F81 /* VC2.xib */; };
 		2B77737A2660E55B001F1DF9 /* VC1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B7773782660E55B001F1DF9 /* VC1.swift */; };
 		2B77737B2660E55B001F1DF9 /* VC1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B7773792660E55B001F1DF9 /* VC1.xib */; };
+		2B781BDB26647AD900F04D5F /* TdwCircleViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B781BD926647AD900F04D5F /* TdwCircleViewCell.swift */; };
+		2B781BDC26647AD900F04D5F /* TdwCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B781BDA26647AD900F04D5F /* TdwCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,13 +43,13 @@
 		2B420A7F2662386B002AF552 /* VcOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VcOC.h; sourceTree = "<group>"; };
 		2B420A802662386B002AF552 /* VcOC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VcOC.m; sourceTree = "<group>"; };
 		2B420A812662386B002AF552 /* VcOC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VcOC.xib; sourceTree = "<group>"; };
-		2B420AA426626552002AF552 /* TdwCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TdwCircleView.swift; sourceTree = "<group>"; };
-		2B420AA526626552002AF552 /* TdwCircleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TdwCircleViewCell.swift; sourceTree = "<group>"; };
 		2B5371182657A94600886945 /* UIView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
 		2B6CB5CF2661C70500117F81 /* VC2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC2.swift; sourceTree = "<group>"; };
 		2B6CB5D02661C70500117F81 /* VC2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VC2.xib; sourceTree = "<group>"; };
 		2B7773782660E55B001F1DF9 /* VC1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC1.swift; sourceTree = "<group>"; };
 		2B7773792660E55B001F1DF9 /* VC1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VC1.xib; sourceTree = "<group>"; };
+		2B781BD926647AD900F04D5F /* TdwCircleViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TdwCircleViewCell.swift; sourceTree = "<group>"; };
+		2B781BDA26647AD900F04D5F /* TdwCircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TdwCircleView.swift; sourceTree = "<group>"; };
 		B45166C4E0EFE842BCEC16C6 /* Pods-TdwCircleViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TdwCircleViewDemo.debug.xcconfig"; path = "Target Support Files/Pods-TdwCircleViewDemo/Pods-TdwCircleViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		D15FA1144EF039D28D37A272 /* Pods-TdwCircleViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TdwCircleViewDemo.release.xcconfig"; path = "Target Support Files/Pods-TdwCircleViewDemo/Pods-TdwCircleViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,8 +68,7 @@
 		2B0C1006265756360025E7A8 = {
 			isa = PBXGroup;
 			children = (
-				2B420AA426626552002AF552 /* TdwCircleView.swift */,
-				2B420AA526626552002AF552 /* TdwCircleViewCell.swift */,
+				2B781BD826647AD900F04D5F /* TdwCircleView */,
 				2B0C1011265756360025E7A8 /* TdwCircleViewDemo */,
 				2B0C1010265756360025E7A8 /* Products */,
 				E736E27BCEFED32804E4348B /* Pods */,
@@ -109,6 +108,15 @@
 				2B420A7E2662386B002AF552 /* TdwCircleViewDemo-Bridging-Header.h */,
 			);
 			path = TdwCircleViewDemo;
+			sourceTree = "<group>";
+		};
+		2B781BD826647AD900F04D5F /* TdwCircleView */ = {
+			isa = PBXGroup;
+			children = (
+				2B781BD926647AD900F04D5F /* TdwCircleViewCell.swift */,
+				2B781BDA26647AD900F04D5F /* TdwCircleView.swift */,
+			);
+			path = TdwCircleView;
 			sourceTree = "<group>";
 		};
 		9F43AC47A9D004F1D4FECC95 /* Frameworks */ = {
@@ -249,13 +257,13 @@
 			files = (
 				2B420A5026620FFA002AF552 /* UIView+addGes.swift in Sources */,
 				2B420A4D26620557002AF552 /* VC3.swift in Sources */,
+				2B781BDC26647AD900F04D5F /* TdwCircleView.swift in Sources */,
 				2B420A822662386B002AF552 /* VcOC.m in Sources */,
 				2B77737A2660E55B001F1DF9 /* VC1.swift in Sources */,
+				2B781BDB26647AD900F04D5F /* TdwCircleViewCell.swift in Sources */,
 				2B0C1017265756360025E7A8 /* ViewController.swift in Sources */,
 				2B5371192657A94600886945 /* UIView+Extention.swift in Sources */,
 				2B0C1013265756360025E7A8 /* AppDelegate.swift in Sources */,
-				2B420AA626626552002AF552 /* TdwCircleView.swift in Sources */,
-				2B420AA726626552002AF552 /* TdwCircleViewCell.swift in Sources */,
 				2B6CB5D12661C70500117F81 /* VC2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
